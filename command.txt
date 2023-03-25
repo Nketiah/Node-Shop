@@ -1,0 +1,3 @@
+npm i typescript ts-node-dev @types/node @types/express - D
+npm i express
+mongodb pasword = PvpMrRgpp7GKJiQe
