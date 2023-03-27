@@ -2,7 +2,6 @@ import asyncHandler from "express-async-handler";
 import { prisma } from "../../prisma";
 import { sendCookieToken } from "../helpers/cookieToken"
 import createError from "http-errors"
-import { Response } from "express"
 
 
 export const register = asyncHandler(async (req, res, next) => {
@@ -39,6 +38,7 @@ export const userLogin = asyncHandler (async (req, res, next) => {
 
    sendCookieToken(user, res)
 })
+
 
 export const logout = asyncHandler ( async(req, res) =>{
    res.clearCookie("token")
